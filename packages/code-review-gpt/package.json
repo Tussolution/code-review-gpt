@@ -1,9 +1,9 @@
 {
-  "name": "code-review-gpt",
+  "name": "tuss-code-review-gpt",
   "version": "0.1.8",
   "description": "Your AI code reviewer. Improve code quality and catch bugs before you break production",
   "bin": {
-    "code-review-gpt": "./dist/index.js"
+    "tuss-code-review-gpt": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
