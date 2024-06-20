@@ -1,6 +1,6 @@
 {
   "name": "tuss-code-review-gpt",
-  "version": "0.1.8",
+  "version": "0.1.8gamma",
   "description": "Your AI code reviewer. Improve code quality and catch bugs before you break production",
   "bin": {
     "tuss-code-review-gpt": "./dist/index.js"
@@ -15,8 +15,8 @@
     "configure": "ts-node ./src/index.ts configure",
     "test": "ts-node ./src/index.ts test",
     "test-unit": "dotenv -e .env jest",
-    "build": "node ./utils/build.js",
-    "postbuild": "node ./utils/shebang.js && chmod +x ./dist/index.js",
+    "build": "  tsc",
+    "postbuild": "node ./utils/shebang.js && npx chmod-cli ./dist/index.js -m 0o755",
     "publish-package": "npm i && npm run build && npm publish --access public"
   },
   "keywords": [
@@ -56,6 +56,7 @@
     "@types/node": "^20.4.0",
     "@types/yargs": "^17.0.24",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "chmod-cli": "^2.0.1",
     "dotenv-cli": "^7.2.1",
     "esbuild": "0.19.1",
     "eslint": "^8.44.0",
