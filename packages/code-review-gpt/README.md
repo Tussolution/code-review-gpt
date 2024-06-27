@@ -1,3 +1,18 @@
+# Batdorj's Note for updating 🤖
+
+The main prompt file is placed inside the `src` folder. The `src` folder is the main folder for the source code of the application. The `src` folder contains the main prompt file, `prompt.ts`, which is used to generate the prompt for the model. The `src` folder also contains the main application file, `index.ts`, which is used to run the application.
+
+If you want to make changes to the prompt, you can do so by editing the `prompt.ts` file. If you want to make changes to the application logic, you can do so by editing the `index.ts` file.
+
+After any changes, please follow the steps below to update the application:
+1. Run the tests to make sure the changes do not break the application.
+2. Update the version number in the `package.json` file.
+3. Update the `CHANGELOG.md` file with the changes made.
+4. Commit the changes to the repository.
+5. Release the new update to NPM repository.
+6. Update the workflows inside the github repository to use the new version of the application.
+
+
 # Code Review GPT 🤖
 
 Code Review GPT is a NodeJS package that uses LLMs to provide feedback on code. It is designed to be used in a CI environment to provide feedback on pull requests.

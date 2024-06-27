@@ -1,6 +1,6 @@
 {
   "name": "tuss-code-review-gpt",
-  "version": "0.1.8gamma",
+  "version": "0.1.9",
   "description": "Your AI code reviewer. Improve code quality and catch bugs before you break production",
   "bin": {
     "tuss-code-review-gpt": "./dist/index.js"
@@ -48,6 +48,7 @@
     "octokit": "^3.1.0",
     "ts-retry": "^4.2.1",
     "tslog": "^4.8.2",
+    "tuss-code-review-gpt": "^0.1.8-gamma",
     "yargs": "^17.7.2"
   },
   "devDependencies": {
