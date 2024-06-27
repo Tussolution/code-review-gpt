@@ -4,7 +4,6 @@ import AIModel from "../../common/model/AIModel";
 import { IFeedback } from "../../common/types";
 import { logger } from "../../common/utils/logger";
 import { maxFeedbackCount } from "../constants";
-import { completionPrompt } from "../prompt/prompts";
 
 const collectAndLogFeedback = async (
   feedbackPromise: Promise<IFeedback[]>
@@ -19,18 +18,13 @@ const collectAndLogFeedback = async (
   }
 };
 
-const createSummary = async (
+const createSummary =  (
   model: AIModel,
   feedbacks: IFeedback[]
-): Promise<string> => {
-  const finalPrompt = completionPrompt.replace(
-    "{feedback}",
-    JSON.stringify(feedbacks)
-  );
-
-  const summary = await model.callModel(finalPrompt);
-
-  logger.info(summary);
+): string => {
+  
+  const summary  = '👍👍👍';
+  logger.info('this feature is deprecated', model, feedbacks, summary);
 
   return summary;
 };

@@ -31,7 +31,7 @@ export const askAI = async (
       )
       .toString()}`
   );
-  const summary = await createSummary(model, feedbacks);
+  const summary = createSummary(model, feedbacks);
 
   logger.debug(`Summary of feedbacks: ${summary}`);
 
